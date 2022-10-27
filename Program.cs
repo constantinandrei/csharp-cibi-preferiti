@@ -177,18 +177,27 @@ Console.WriteLine();
 Console.WriteLine("Snack 6");
 Console.WriteLine();
 
-string[] invitatiGatsby = { "Andrei", "Paolo", "Francesca", "Ferdinando" };
+string[] invitatiGatsby = { "Andrei", "Paolo", "Francesca", "Ferdinando", "paolo" };
 
 Console.WriteLine("Inserisci il tuo nome per controllare la lista degli invitati (Paolo è sempre benevenuto)");
 
 string invitato = Console.ReadLine();
+bool isInvited = false;
 
 for (int i = 0; i < invitatiGatsby.Length; i++)
 {
     if (invitatiGatsby[i] == invitato)
     {
-        Console.WriteLine($"Benvenuto {invitato}, addesso che sei arrivato possiamo iniziare la festa!");
+        isInvited = true;
     }
+}
+
+if (isInvited)
+{
+    Console.WriteLine($"Benvenuto {invitato}, addesso che sei arrivato possiamo iniziare la festa!");
+} else
+{
+    Console.WriteLine($"Torni a casa sua {invitato}");
 }
 
 Console.WriteLine("--------------------------");
