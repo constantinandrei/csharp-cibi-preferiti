@@ -130,3 +130,24 @@ Console.WriteLine("La somma dei numeri inseriti è: " + somma);
 
 Console.WriteLine("--------------------------");
 Console.WriteLine();
+
+// Snack4. Calcola la somma e la media dei numeri da 2 a 10.
+
+Console.WriteLine("Snack 4");
+Console.WriteLine();
+
+int somma2to10 = 0;
+int cicli2to10 = 0;
+
+for(int i = 2; i <= 10; i++)
+{
+    somma2to10 += i;
+    cicli2to10++;
+}
+
+Console.WriteLine($"La somma dei numeri tra 2 e 10 è {somma2to10}");
+Console.WriteLine($"La media dei numeri tra 2 e 10 è {somma2to10 / cicli2to10}");
+
+Console.WriteLine("--------------------------");
+Console.WriteLine();
+
