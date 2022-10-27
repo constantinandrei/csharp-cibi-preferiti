@@ -202,3 +202,36 @@ if (isInvited)
 
 Console.WriteLine("--------------------------");
 Console.WriteLine();
+
+// Snack7. Crea un array vuoto.
+//         Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
+
+Console.WriteLine("Snack 7");
+Console.WriteLine();
+
+int[] arrayVuoto = new int[6];
+
+for (int i = 0; i < arrayVuoto.Length; i++)
+{
+    Console.WriteLine($"Inserisci un numero ({i + 1} / 6), se è dispari verrà stampato nella lista finale");
+    int numero = Convert.ToInt32(Console.ReadLine());
+
+    if (numero % 2 == 1)
+    {
+        arrayVuoto[i] = numero;
+    }
+}
+
+Console.WriteLine();
+Console.WriteLine("I numeri dispari sono:");
+
+for (int i = 0; i < arrayVuoto.Length; i++)
+{
+    if (arrayVuoto[i] != 0)
+    {
+        Console.WriteLine(arrayVuoto[i]);
+    }
+}
+
+Console.WriteLine("--------------------------");
+Console.WriteLine();
