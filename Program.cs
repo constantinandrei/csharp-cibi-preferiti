@@ -151,3 +151,22 @@ Console.WriteLine($"La media dei numeri tra 2 e 10 è {somma2to10 / cicli2to10}"
 Console.WriteLine("--------------------------");
 Console.WriteLine();
 
+//Snack5.  Il software chiede all’utente di inserire un numero. Se il numero inserito è pari,
+//         stampa il numero, se è dispari, stampa il numero successivo.
+
+Console.WriteLine("Snack 5");
+Console.WriteLine();
+
+Console.WriteLine("Inserire un numero, se è dispari verà stampato, se è dispari verrà stampato quello successivo");
+
+int numeroPariDispari = Convert.ToInt32(Console.ReadLine());
+
+if (numeroPariDispari % 2 == 1)
+{
+    numeroPariDispari++;
+}
+
+Console.WriteLine(numeroPariDispari);
+
+Console.WriteLine("--------------------------");
+Console.WriteLine();
