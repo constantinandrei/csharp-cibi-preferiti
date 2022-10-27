@@ -294,3 +294,41 @@ while (somma50 < 50)
 
 Console.WriteLine("--------------------------");
 Console.WriteLine();
+
+// Snack10.  Fai inserire un numero, che chiameremo N, all’utente.
+//           Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
+//           Ogni volta che ne crei uno, stampalo a schermo
+
+Console.WriteLine("Snack 10");
+Console.WriteLine();
+
+
+Console.WriteLine("Quanti array creare?");
+int numeroN = Convert.ToInt32(Console.ReadLine());
+
+for(int i = 0; i < numeroN; i++)
+{
+    int[] arrayN = new int[10];
+
+    for (int j = 0; j < arrayN.Length; j++)
+    {
+        Random random = new Random();
+        arrayN[j] = random.Next(1, 100);
+    }
+
+    for (int k = 0; k < arrayN.Length; k++)
+    {
+        if (k < arrayN.Length - 1)
+        {
+            Console.Write(arrayN[k] + " - ");
+        } else
+        {
+            Console.Write(arrayN[k]);
+        }
+    }
+
+    Console.WriteLine();
+}
+
+Console.WriteLine("--------------------------");
+Console.WriteLine();
