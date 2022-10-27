@@ -59,8 +59,11 @@ Console.WriteLine("--------------------------");
 Console.WriteLine();
 
 
-// Snack1.L’utente inserisce due numeri in successione.
-// Il software stampa il maggiore
+// Snack1.  L’utente inserisce due numeri in successione.
+//          Il software stampa il maggiore
+
+Console.WriteLine("Snack 1");
+Console.WriteLine();
 
 Console.WriteLine("Inserire il primo numero: ");
 int numero1 = Convert.ToInt32(Console.ReadLine());
@@ -79,3 +82,33 @@ if (numero1 > numero2)
 {
     Console.WriteLine($"I numeri inseriti ({numero2}, {numero1}) sono uguali");
 }
+
+Console.WriteLine("--------------------------");
+Console.WriteLine();
+
+// Snack2.  L’utente inserisce due parole in successione.
+//          Il software stampa prima la parola più corta, poi la parola più lunga.
+
+Console.WriteLine("Snack 2");
+Console.WriteLine();
+
+Console.WriteLine("Inserire la prima parola: ");
+string stringa1 = Console.ReadLine();
+
+Console.WriteLine("Inserire la seconda parola: ");
+string stringa2 = Console.ReadLine();
+
+
+if (stringa1.Length > stringa2.Length)
+{
+    Console.WriteLine($"La prima parola ({stringa1}), lunga {stringa1.Length} caratteri è più lunga della seconda parola ({stringa1}), lunga {stringa1.Length} caratteri.");
+} else if (stringa2.Length > stringa1.Length)
+{
+    Console.WriteLine($"La seconda parola ({stringa2}), lunga {stringa2.Length} caratteri è più lunga della prima parola ({stringa2}), lunga {stringa1.Length} caratteri.");
+} else
+{
+    Console.WriteLine($"Le due parole inserite ({stringa1}, {stringa2}) hanno la stessa lunghezza di {stringa1.Length} caratteri");
+}
+
+Console.WriteLine("--------------------------");
+Console.WriteLine();
