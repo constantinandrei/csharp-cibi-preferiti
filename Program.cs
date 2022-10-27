@@ -235,3 +235,31 @@ for (int i = 0; i < arrayVuoto.Length; i++)
 
 Console.WriteLine("--------------------------");
 Console.WriteLine();
+
+//Snack8.  Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in
+//         posizione dispari.
+
+Console.WriteLine("Snack 8");
+Console.WriteLine();
+
+int[] numeriInteri = { 2, 4, 8, 87, 34, 12, 4, 2, 56 };
+int sommaPosizioneDispari = 0;
+
+Console.WriteLine("L'array dei numeri è:");
+
+for (int i = 0; i < numeriInteri.Length; i++)
+{
+    Console.Write($"Posizione: {i}, valore: {numeriInteri[i]}");
+    Console.WriteLine();
+    if (i % 2 == 1)
+    {
+        sommaPosizioneDispari += numeriInteri[i];
+    }
+}
+
+
+Console.WriteLine();
+Console.WriteLine($"la somma dei numeri in posizione dispari è: {sommaPosizioneDispari}");
+
+Console.WriteLine("--------------------------");
+Console.WriteLine();
