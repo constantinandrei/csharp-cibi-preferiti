@@ -263,3 +263,34 @@ Console.WriteLine($"la somma dei numeri in posizione dispari è: {sommaPosizione
 
 Console.WriteLine("--------------------------");
 Console.WriteLine();
+
+// Snack9.  Crea un array vuoto e chiedi all’utente un numero da inserire nell’array.
+//          Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la
+//          somma degli elementi è minore di 50.
+
+Console.WriteLine("Snack 9");
+Console.WriteLine();
+
+int[] array50 = new int[50];
+int somma50 = 0;
+int cicloArray50 = 0;
+
+while (somma50 < 50)
+{
+    Console.WriteLine($"Inserisci un numero, per adesso la somma è {somma50}");
+    int numero = Convert.ToInt32(Console.ReadLine());
+    if (numero > 0)
+    {
+        array50[cicloArray50] = numero;
+        somma50 += numero;
+        cicloArray50++;
+    }
+
+    if (somma50 > 50)
+    {
+        Console.WriteLine("abbiamo superato 50!");
+    }
+}
+
+Console.WriteLine("--------------------------");
+Console.WriteLine();
