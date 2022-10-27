@@ -55,3 +55,27 @@ if (cibiPreferiti.Length % 2 == 0)
 
 Console.WriteLine(cibiPreferiti[posizioneMediana]);
 
+Console.WriteLine("--------------------------");
+Console.WriteLine();
+
+
+// Snack1.L’utente inserisce due numeri in successione.
+// Il software stampa il maggiore
+
+Console.WriteLine("Inserire il primo numero: ");
+int numero1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Inserire il secondo numero: ");
+int numero2 = Convert.ToInt32(Console.ReadLine());
+
+if (numero1 > numero2)
+{
+    Console.WriteLine($"Il primo numero ({numero1}) è più grande del secondo numero ({numero2})");
+
+} else if (numero2 > numero1)
+{
+    Console.WriteLine($"Il secondo numero ({numero2}) è più grande del primo numero ({numero1})");
+} else
+{
+    Console.WriteLine($"I numeri inseriti ({numero2}, {numero1}) sono uguali");
+}
