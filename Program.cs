@@ -358,3 +358,20 @@ Console.WriteLine("Inserire la seconda parola");
 string secondWord = Console.ReadLine();
 
 Console.WriteLine(CompareWord(firstWord, secondWord));
+
+//Snack 2
+//Scrivere una funzione per verificare se un numero è pari o dispari.
+//Quindi chiedere un numero all’utente e comunicargli se è pari o dispari.
+
+string OddEven(int number)
+{
+    if (number % 2 == 0)
+        return "pari";
+    else
+        return "dispari";
+}
+
+Console.WriteLine("Inserisci il numero per sapere se e pari oppure dispari");
+int oddEvenNumber = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"Il numero inserito è {OddEven(oddEvenNumber)}");
